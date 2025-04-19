@@ -1,13 +1,12 @@
 import { AfterViewInit, Component, ElementRef, HostListener, signal, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgClass } from '@angular/common';
-import { ConfigComponent } from './config';
 import { HeaderComponent } from './header';
 import { SidebarComponent } from './sidebar';
 
 @Component({
   selector: 'app-layouts',
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, NgClass, ConfigComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent, NgClass],
   templateUrl: './layouts.component.html',
 })
 export class LayoutsComponent implements AfterViewInit {
